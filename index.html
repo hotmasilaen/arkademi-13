@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkademi | Prakerja</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: #0977be;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+        }
+        .container > img{
+            margin-right: 20px;
+            width: 35px;
+            height: 35px;
+        }
+        table, thead, tbody, td, th{
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function validateForm(){
+            let x = document.forms['myForm']['fname'].value;
+            if(x == ''){
+                alert('Nama tidak boleh kosong!');
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam meningkatkan karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan lisensi profesi. -->
+    <h1>Kursus Online dari<br/>
+    Lembaga Pelatihan Resmi untuk<br />
+    Tingkatkan Karier Profesionalmu</h1>
+    <a href="https://youtube.com/">
+        <b>Promo & Event</b>
+    </a>
+    <div class="container">
+        <img src="https://arkademi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon-industri.0a636bfb.webp&w=96&q=75" alt="logo-pendidikan" />
+        <p>
+            <mark>
+                Arkademi adalah lembaga kursus dan pendidikan resmi berlisensi dari Kementrian Pendidikan, Kebudayaan, Riset, dan Teknologi RI
+            </mark>
+        </p>
+    </div>
+    <form name="myForm" onsubmit="return validateForm()">
+        Name: <input type="text" name="fname" />
+        <input type="submit" value="Submit" />
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>No.Hp</th>
+                <th>Alamat</th>
+                <th>Kode Pos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Farhan</td>
+                <td>081245347893</td>
+                <td>Jakarta</td>
+                <td>76989</td>
+            </tr>
+            <tr>
+                <td>Siti</td>
+                <td>08124893</td>
+                <td>Lampung</td>
+                <td>21432</td>
+            </tr>
+            <tr>
+                <td>Nia</td>
+                <td>082245347893</td>
+                <td>Medan</td>
+                <td>53242</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
